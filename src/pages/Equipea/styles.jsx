@@ -3,19 +3,20 @@ import styled from "styled-components";
 
 
 export const H2 = styled.h2`
-    color: #E68C8C;
-    background-color: black;
+    color: #00083E;
+    background-color: #969BBB;
     text-align: center;
+    border: black solid;
 
 `;
 
 export const DIV = styled.div`
    
-    background-color: #E68C8C;
+    background-color: #00083E;
     border: black solid;
     border-radius: 20px;
-    height: 350px;
-    width: 400px;
+    height: 450px;
+    width: 700px;
     text-align: center;
     margin-left: auto;
     margin-right: auto;

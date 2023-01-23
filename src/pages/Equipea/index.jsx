@@ -4,33 +4,32 @@ import { H2 } from './styles';
 import { DIV } from './styles';
 import { INPUT } from './styles';
 import { useState } from "react";
-
-
-
+import{dados} from './Cards'
 
 function Equipea() {
 
-     const [email, setEmail] = useState("");
+    const [dadoss] = useState(dados);
+    console.log(dados);
+
+    
+
+
 
     return (
         <>
+        
+        {dados.map((item)=>(
+            <ul>
+               
+                <li >id: {item.id}</li>
+                <li>span1:{item.span1}</li>
+                <li>span2:{item.span2}</li>
+                <li>text:{item.text}</li>                  
+           </ul>  
+        ))}
             
-            <Navbar/>
-            {/*primeiro teste */}
-            <br/>
-            <H2>Alguém me salva</H2>
-             {/*SEGUNDO teste */}
-             <br/>
-             
-            <form/>
-                <DIV>
-                    <label htmlFor="name"></label>
-                    <INPUT onChange={(e) => setEmail(e.target.value)}/>
-
-                    <a > {email}</a>
-                </DIV>
             
-            <form/>
+           
               
         </>
     )
