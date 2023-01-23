@@ -45,7 +45,7 @@ You can learn more in the [Create React App documentation](https://facebook.gith
 
 To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
+    ### Code Splitting
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
@@ -68,3 +68,16 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+### Libraries install
+
+Inside the project folder install these libraries
+    npm install react-init -g
+    npm i styled-components
+    npm i react-router-dom
+
+### VsCode Extensions
+
+Install the following extensions
+    vscode-styled-components (https://marketplace.visualstudio.com/items?itemName=styled-components.vscode-styled-components)
+    Prettier (https://marketplace.visualstudio.com/items?itemName=styled-components.vscode-styled-components)
