@@ -6,20 +6,11 @@ import { INPUT } from './styles';
 import { useState } from "react";
 
 
+
+
 function Equipea() {
 
-    function adicionaName(name){
-       
-        setName(name)
-        console.log('Cadastrou o usuário')
-        console.log(name)
-
-      // buscaInput = e =>{
-        //    console.log(e)
-       // }
-    }
-
-    const [name, setName] = useState("");
+     const [email, setEmail] = useState("");
 
     return (
         <>
@@ -31,24 +22,20 @@ function Equipea() {
              {/*SEGUNDO teste */}
              <br/>
              
-            <form onSubmit={adicionaName}/>
+            <form/>
                 <DIV>
                     <label htmlFor="name"></label>
-                    <INPUT type="text" id="name" name="name" placeholder= "Digite o seu e-mail"/>
+                    <INPUT onChange={(e) => setEmail(e.target.value)}/>
 
-                    <INPUT type="text" id="name2" name="name" placeholder= "Digite o seu e-mail"
-                    onKeyDown={(e) => this.buscaInput(e)}/>
+                    <a > {email}</a>
                 </DIV>
             
             <form/>
-            
-            
-            
+              
         </>
     )
-    
- 
    
 }
 
 export default Equipea;
+
