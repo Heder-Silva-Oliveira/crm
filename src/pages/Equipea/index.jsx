@@ -4,33 +4,65 @@ import { H2 } from './styles';
 import { DIV } from './styles';
 import { INPUT } from './styles';
 import { useState } from "react";
-import{dados} from './Cards'
+import Cards from '../../components/Cards/index';
 
 function Equipea() {
 
-    const [dadoss] = useState(dados);
-    console.log(dados);
-
     
-
-
-
+     const dados = [
+        {
+          id: 1,
+          span1: "aaaaaaaaaa",
+          span2: "Texto",
+          text: "texto",
+        },
+        {
+          id: 2,
+          span1: "bbbbbbbbbbbbb",
+          span2: "texto",
+          text: "Texto ",
+        },
+      {
+        id: 3,
+        span1: "ccccccc",
+        span2: "Texto",
+        text: "texto",
+      },
+      {
+        id: 4,
+        span1: "texto",
+        span2: "Texto",
+        text: "texto",
+      },
+      {
+        id: 5,
+        span1: "texto",
+        span2: "Texto",
+        text: "texto",
+      },
+      {
+        id: 6,
+        span1: "texto",
+        span2: "Texto",
+        text: "texto",
+      },
+    ]
+   
     return (
         <>
-        
-        {dados.map((item)=>(
-            <ul>
-               
-                <li >id: {item.id}</li>
-                <li>span1:{item.span1}</li>
-                <li>span2:{item.span2}</li>
-                <li>text:{item.text}</li>                  
-           </ul>  
-        ))}
-            
-            
-           
-              
+          <Navbar />
+                <br/>
+                <DIV>
+                  {dados.map((item) =>(
+                    <Cards
+                    key ={item.id}
+                    id ={item.id}
+                    span1 ={item.span1}
+                    span2 ={item.span2}
+                    text = {item.text}/>
+                    ))
+                  }
+                </DIV>
         </>
     )
    

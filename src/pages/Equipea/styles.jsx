@@ -12,15 +12,14 @@ export const H2 = styled.h2`
 
 export const DIV = styled.div`
    
-    background-color: #00083E;
+    background-color: 	#5B7DE0;
     border: black solid;
     border-radius: 20px;
-    height: 450px;
+    height: 550px;
     width: 700px;
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
+    text-align: left;
+    margin-left: 15px;
+    display: inline-block;
 
 `;
 
@@ -32,7 +31,7 @@ export const INPUT = styled.input`
     text-align: center;
     margin-left: auto;
     margin-right: auto;
-    display: block;
+    display: inline-block;
    
 
 `;
