@@ -1,16 +1,34 @@
 import React from "react";
-import Navbar from "../../components/navbarUser";
-import {H1} from "./styles";
+import {useState} from "react";
+import { Input, Triangulo } from './styles';
+import Navbar from "../../components/navbarUser/index";
 
-class Equipec extends React.Component {
-  render() {
-    return (
-      <>
-        <Navbar />
-        <H1>Equipec</H1>
-      </>
-    );
+  
+
+  function Equipec (){
+    const [value, setValue] = useState();
+
+        const handleChange = (e) =>{
+          setValue(e.target.value);}
+        return(
+          <>
+          <Navbar> 
+            
+          </Navbar>
+          <body>
+            <div>
+              <Triangulo>  
+              <p>{value}</p>
+              </Triangulo>
+            <Input type="text" 
+            value={value} 
+            onChange={handleChange} 
+            >
+            </Input>
+             </div>
+             </body>
+             </>
+        );
   }
-}
+     export default Equipec;
 
-export default Equipec;
