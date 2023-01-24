@@ -1,5 +1,5 @@
 import React from 'react';
-import { Caixa,Topo,Icon,Div,Corpo,H1 } from './styles';
+import { Caixa,Topo,Icon,Div,Corpo } from './styles';
 
 //ICONES
 
@@ -16,7 +16,7 @@ const index = ({id, span1, span2, text,iconR}) => {
         <Caixa >{id} </Caixa> 
         <Icon>
          
-            <MdEdit onClick={() => console.log( {span1},{span2},{text})}  size={20}/>
+            <MdEdit onClick={() => console.log( {id},{span1},{span2},{text})}  size={20}/>
 
             <BiTrash  size={20}/>
           
@@ -25,7 +25,7 @@ const index = ({id, span1, span2, text,iconR}) => {
         
       </Topo>
       <Corpo>
-          <H1>{span1} </H1>
+          <h1>{span1} </h1>
           <h2>{span2}</h2>
           <p>{text}</p>
        </Corpo>

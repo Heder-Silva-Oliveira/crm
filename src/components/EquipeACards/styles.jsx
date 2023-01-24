@@ -32,7 +32,7 @@ margin-left:2px;
 `;
 
 export const Topo = styled.div`
-margin-top: 2px;
+margin-top: 5px;
 margin-left: 1px;
 display: grid;
 grid-template-columns: 4fr 1fr;
@@ -61,10 +61,4 @@ margin-left:5px;
 
 `;
 
-export const H1 = styled.h1`
-	
-
-
-
-`;
 
