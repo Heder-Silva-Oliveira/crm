@@ -1,4 +1,5 @@
 {
+<<<<<<< Updated upstream
     "workbench.colorCustomizations": {
         "activityBar.activeBackground": "#28b86d",
         "activityBar.background": "#28b86d",
@@ -19,4 +20,22 @@
         "titleBar.inactiveForeground": "#e7e7e799"
     },
     "peacock.color": "#1f8e54"
+=======
+    "audioCues.diffLineDeleted": "off",
+    "audioCues.diffLineInserted": "off",
+    "audioCues.lineHasBreakpoint": "off",
+    "audioCues.lineHasError": "off",
+    "audioCues.lineHasFoldedArea": "off",
+    "audioCues.lineHasInlineSuggestion": "off",
+    "audioCues.noInlayHints": "off",
+    "audioCues.notebookCellCompleted": "off",
+    "audioCues.notebookCellFailed": "off",
+    "audioCues.onDebugBreak": "off",
+    "audioCues.taskCompleted": "off",
+    "audioCues.taskFailed": "off",
+    "audioCues.terminalQuickFix": "off",
+    "java.codeAction.sortMembers.avoidVolatileChanges": true,
+    "typescript.suggest.objectLiteralMethodSnippets.enabled": true,
+    "java.symbols.includeSourceMethodDeclarations": true
+>>>>>>> Stashed changes
 }
