@@ -7,7 +7,9 @@ width: 150px;
 border-radius: 10px;
 border-left: solid 10px #800000; 
 display: inline-block;
-margin: 20px;
+margin-left:auto;
+margin-right:auto;
+margin-top: 20px;
 background-color: white;
 align-items: center;
 
@@ -24,6 +26,9 @@ color: black;
 background-color: #FA8072;
 text-align: center;
 grid-column: 1;
+margin-left:2px;
+
+
 `;
 
 export const Topo = styled.div`
@@ -32,7 +37,6 @@ margin-left: 1px;
 display: grid;
 grid-template-columns: 4fr 1fr;
 
-
 `;
 
 
@@ -40,6 +44,7 @@ export const Icon = styled.div`
 
 grid-column: 4;
 margin-right: 5px;
+cursor: pointer;
 
 
 `;
@@ -48,7 +53,9 @@ margin-right: 5px;
 export const Corpo = styled.div`
 font-family: Helvetica;
 font-size: 10px;
+display: block;
 word-wrap: break-word;
+margin-left:5px;
 
 
 

@@ -9,15 +9,18 @@ import  {MdEdit}  from "@react-icons/all-files/md/MdEdit";
 
 
 
-
-const index = ({id, span1, span2, text}) => {
+const index = ({id, span1, span2, text,iconR}) => {
   return (
     <Div>
       <Topo>
         <Caixa >{id} </Caixa> 
         <Icon>
-          <MdEdit  size={20}/> 
-          <BiTrash size={20}/> 
+         
+            <MdEdit onClick={() => console.log( {span1},{span2},{text})}  size={20}/>
+
+            <BiTrash  size={20}/>
+          
+         
         </Icon>
         
       </Topo>
@@ -30,4 +33,4 @@ const index = ({id, span1, span2, text}) => {
   )
 }
 
-export default index
+export default index;
