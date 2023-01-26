@@ -1,8 +1,9 @@
-import { Button, CardContent, CardHeader, CardStyle, Status, StatusCard, StatusCard2, CardBody } from "./styles"
+import { Button, CardContent, CardHeader, CardStyle, StatusCard, StatusCard2, CardBody } from "./styles"
 import {ReactComponent as DeleteIcon} from './assets/delete.svg'
 import {ReactComponent as EditIcon } from './assets/edit.svg'
 import { useState } from "react"
-import Modal from "./Modal"
+import Modal from "../equipeBModal"
+
 
 
 const Card = ({ span1, span2, text}) => {
@@ -11,11 +12,10 @@ const Card = ({ span1, span2, text}) => {
 
     return (
     
-            <CardStyle >
-                <Status></Status>
+            <CardStyle $mode={span1}>
                 <CardContent>
                 <CardHeader>
-                    <StatusCard>
+                    <StatusCard $mode={span1}>
                         {span1}
                     </StatusCard>
                     <StatusCard2>
@@ -27,9 +27,7 @@ const Card = ({ span1, span2, text}) => {
                             <DeleteIcon />
                         </Button>
                         <div>
-                            <Modal isOpen={openModal}
-                                setModalOpen={() => setOpenModal(!openModal)}>
-                                    <p>Olá</p>
+                            <Modal isOpen={openModal}setModalOpen={() => setOpenModal(!openModal)}>
                             </Modal>     
                         </div>
                     </div>
