@@ -1,5 +1,7 @@
 import styled from "styled-components";
-export const H1 = styled.h1 `
-  background-color: white;
-  color: #d6d68d;
-`;
+
+export const Corpinho = styled.body`
+background-color: #ffffff;`
+
+export const Span1 = styled.span1`
+text-align:center;`
