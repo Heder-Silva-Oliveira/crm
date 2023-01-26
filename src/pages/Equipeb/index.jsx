@@ -20,7 +20,7 @@ const Equipeb = () => {
     },
     {
         id: 3,
-        span1: "Habilitado",
+        span1: "Progresso",
         span2: "Funcionando",
         text: "Este é o Terceiro card",
     },
@@ -38,7 +38,7 @@ const Equipeb = () => {
   },
   {
       id: 6,
-      span1: "Habilitado",
+      span1: "Progresso",
       span2: "Funcionando",
       text: "Este é o sexto card",
   },
@@ -56,7 +56,7 @@ const Equipeb = () => {
 },
 {
     id: 3,
-    span1: "Habilitado",
+    span1: "Progresso",
     span2: "Funcionando",
     text: "Este é o Terceiro card",
 },
@@ -74,7 +74,7 @@ const Equipeb = () => {
 },
 {
   id: 6,
-  span1: "Habilitado",
+  span1: "Progresso",
   span2: "Funcionando",
   text: "Este é o sexto card",
 },
@@ -92,7 +92,7 @@ const Equipeb = () => {
 },
 {
   id: 3,
-  span1: "Habilitado",
+  span1: "Progresso",
   span2: "Funcionando",
   text: "Este é o Terceiro card",
 },
@@ -110,7 +110,7 @@ text: "Este é o quinto card",
 },
 {
 id: 6,
-span1: "Habilitado",
+span1: "Progresso",
 span2: "Funcionando",
 text: "Este é o sexto card",
 },

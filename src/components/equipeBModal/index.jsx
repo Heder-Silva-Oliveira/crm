@@ -1,16 +1,16 @@
 import React from 'react'
-import { BackgroundStyle, ModalStyle, ButtonClose } from './styles'
+import { BackgroundStyle, ButtonClose, ModalStyle } from '../equipebCards/styles'
 
-const Modal = ({ isOpen, setModalOpen, children}) => {
+
+const Modal = ({ isOpen, setModalOpen}) => {
 
   if ( isOpen ) {
 
   return (
     <BackgroundStyle>
         <ModalStyle>
-            { children }
             <ButtonClose onClick={setModalOpen}>
-                <p>Fechar</p>
+               <p>fechar</p>
             </ButtonClose>
         </ModalStyle>
     </BackgroundStyle>
