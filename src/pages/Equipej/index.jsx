@@ -3,7 +3,7 @@ import Navbar from "../../components/navbarUser"
 import Card from './card';
 import clientes from './clientes';
 import { FaUser, FaTrash, FaSearch } from 'react-icons/fa'
-import { H1, DIV, H2, SECTION } from "./styles";
+import { H1, Div, DivSubject, DivPage,DivSidebar, H2, Section } from "./styles";
 
 const Equipej = () => {
   const [clientData, setClientData] = useState(clientes);
@@ -25,14 +25,28 @@ const Equipej = () => {
     <>
     <Navbar/>
     <header>
-        <div className="container">
-            <H1>Hello world</H1>
-        </div>
+ 
     </header>
-    <DIV>
-      <H2>Olá mundo</H2>
-      <form>
-        <div>
+    <DivPage>
+      <DivSidebar>
+
+      </DivSidebar>
+
+      <Div>
+
+          {filterCustomers().map((cliente, index) => (
+            <Section key={index}>
+              <Card 
+                key={cliente.id}
+                nome={<><FaUser/> Nome: {cliente.nome}</>}
+                email={`Email: ${cliente.email}`}
+                deleteButton={<button onClick={() => handleDelete(cliente.id)}>Delete</button>}
+              />
+            </Section>
+          ))}
+      </Div>
+      <DivSubject>
+      <div>
           <FaSearch />
           <input 
             type="text" 
@@ -41,18 +55,11 @@ const Equipej = () => {
             onChange={handleSearch}
           />
         </div>
-      </form>
-      {filterCustomers().map((cliente, index) => (
-        <SECTION key={index}>
-          <Card 
-            key={cliente.id}
-            nome={<><FaUser/> Nome: {cliente.nome}</>}
-            email={`Email: ${cliente.email}`}
-            deleteButton={<button onClick={() => handleDelete(cliente.id)}>Delete</button>}
-          />
-        </SECTION>
-      ))}
-    </DIV>
+
+      </DivSubject>
+
+    </DivPage>
+
     </>
   )
 }

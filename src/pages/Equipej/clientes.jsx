@@ -26,10 +26,15 @@ const clientes = [
     },
     {
         id: 5,
-        nome: "PEDRO",
+        nome: "Diego",
         email: "labarewski7@gmail.com",
 
     },
+
+
+
+
+
 
 ];
 

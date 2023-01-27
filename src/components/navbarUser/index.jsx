@@ -42,7 +42,7 @@ class Navbar extends React.Component {
               <Span>06</Span>
             </Li>
           </Slink>
-          <Slink to="/equipej">
+          <Slink to="/sidebarj">
             <Li>
               <Span>07</Span>
             </Li>

@@ -6,7 +6,7 @@ import Equipeb from "./pages/Equipeb";
 import Equipec from "./pages/Equipec";
 import Equiped from "./pages/Equiped";
 import Equipee from "./pages/Equipee";
-import Equipej from "./pages/Equipej";
+import Sidebarj from "./pages/Sidebarj";
 import Equipef from "./pages/Equipef";
 
 function App() {
@@ -24,7 +24,7 @@ function App() {
             <Route path="/equiped" element={<Equiped />} />
             <Route path="/equipee" element={<Equipee />} />
             <Route path="/equipef" element={<Equipef />} />
-            <Route path="/equipej" element={<Equipej />} />
+            <Route path="/sidebarj" element={<Sidebarj/>} />
           </Routes>
         </div>
       </Router>
