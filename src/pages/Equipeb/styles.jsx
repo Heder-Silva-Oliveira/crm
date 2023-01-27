@@ -12,7 +12,29 @@ const BoardStyle = styled.div`
     gap: 2%;
     padding: 10px;
     overflow: auto;
+
+    &::-webkit-scrollbar{
+        border: 10px solid aquamarine;
+        width: 10px;
+        height: 10px;
+    }
+
+    &::-webkit-scrollbar-track{
+         box-shadow: 5px black;
+         border-radius: 10px;
+    }
+
+    &::-webkit-scrollbar-track-piece{
+        background-color: #16191E;
+    }
+
+    &::-webkit-scrollbar-thumb{
+        background-color: #bebebe;
+        border-radius: 10px;
+    }
+
 `
+
 const MainStyle = styled.div`
     h1{
         color: purple;

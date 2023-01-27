@@ -1,28 +1,66 @@
-import styled from "styled-components"
+import styled, {css} from "styled-components"
 
 const CardStyle = styled.div`
-    width: 100%;
+    ${(props) => {
+        switch (props.$mode) {
+            case "Habilitado":
+                return css`
+                    border-left: 8px solid #00953b;
+                `
+            case "Desabilitado":
+            return css`
+                    border-left: 8px solid #771300;
+                `
+            case "Progresso":
+                return css`
+                    border-left: 8px solid #bb9600;
+                `
+            default:
+                return css`
+                    border-left: 8px solid #6e6b6b;
+                `
+        } 
+    }}
+    width: 95%;
     height: 100px;
     font-size: 12px;
     display: flex;
     background-color: white;
     border-radius: 8px;
     justify-self: center;
+    margin: 5px;
+    :hover {
+        transition: 0,5s;
+        opacity: 0.8;
+    }
 `
-
 
 const CardContent = styled.div`
     width: 100%;
     padding: 5px;
 `
 
-const Status = styled.div`
-    width: 8px;
-    border-radius: 8px 0 0 8px;
-    background-color: #67b769;
-`
 const StatusCard = styled.div`
-    background-color: #67b769;
+    ${(props) => {
+        switch (props.$mode) {
+            case "Habilitado":
+                return css`
+                    background-color: #00953b;
+                `
+            case "Desabilitado":
+            return css`
+                    background-color: #771300;
+                `
+            case "Progresso":
+                return css`
+                    background-color: #bb9600;
+                `
+            default:
+                return css`
+                    background-color: #6e6b6b;
+                `
+        } 
+    }}
     border-radius: 16px;
     padding: 3px;
 `
@@ -84,7 +122,6 @@ const ButtonClose = styled.button`
 export {
     CardStyle,
     CardContent,
-    Status,
     StatusCard,
     StatusCard2,
     CardHeader,
