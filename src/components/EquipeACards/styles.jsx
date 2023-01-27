@@ -1,11 +1,25 @@
-import styled from "styled-components";
+import styled,{css} from "styled-components";
 
 export const Div = styled.div`
+${(props)=>{
+    switch(props.$mode){
+        case 'success':
+            return css`
+                border-left: solid 10px #1fe75b; 
 
+        
+        `;
+        default:
+            return css`
+               border-left: solid 10px #050806; 
+ 
+            
+            `; 
+    }
+}}
 height: 150px;
 width: 150px;
 border-radius: 10px;
-border-left: solid 10px #800000; 
 display: inline-block;
 margin-left:auto;
 margin-right:auto;
@@ -45,6 +59,7 @@ export const Icon = styled.div`
 grid-column: 4;
 margin-right: 5px;
 cursor: pointer;
+display: inline-flex;
 
 
 `;

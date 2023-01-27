@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled,{css} from "styled-components";
 
 
 
@@ -11,7 +11,10 @@ export const H2 = styled.h2`
 `;
 
 export const DIV = styled.div`
-   
+
+
+
+
     background-color: 	#F5F5F5;
     border: black solid;
     border-radius: 5px;
@@ -34,7 +37,6 @@ export const DIV = styled.div`
        ::-webkit-scrollbar-thumb {
         background: #DB7A7C;
         border-radius: 5px;
-        scrollbar-arrow-color: black;
     }
      
   
@@ -42,3 +44,77 @@ export const DIV = styled.div`
     margin-right: auto;
     
 `;
+
+export const DivAparecer = styled.div`
+   
+   ${(props)=>{
+    switch(props.$mode){
+        case'true':
+            return css`
+               
+                z-index: 5;
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100%;
+                background-color: aqua;
+
+
+            `;
+            default:
+                return css`
+                
+                background-color: white;
+                color: black;
+                display: none;   
+                `;
+        }
+    }}
+`;
+
+
+
+export const Icon = styled.div`
+
+grid-column: 4;
+margin-right: 5px;
+cursor: pointer;
+
+
+`;
+
+
+export const ModalButon = styled.div`
+
+    height: 50px;
+    width: 400px;
+    border: solid black;
+    border-radius: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+    font-size: 40px;
+    text-align: center;
+    
+    
+ `;
+
+
+export const Container = styled.div`
+
+display: grid;
+grid-template-columns: 5% 1fr;
+grid-template-rows: 1fr;
+grid-column-gap: 10px;
+grid-row-gap: 0px;
+ `;
+
+export const NavbarGrup = styled.div`
+
+grid-area: 1 / 1 / 2 / 2;
+ `;
+ export const DivConteudo = styled.div`
+
+grid-area: 1 / 2 / 2 / 3;
+ `;
+
