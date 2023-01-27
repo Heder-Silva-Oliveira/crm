@@ -7,7 +7,8 @@ const BoardStyle = styled.div`
     align-content: flex-start;
     background-color: #16191E;
     border-radius: 10px;
-    margin-left: 100px;
+    margin-left: 200px;
+    position: absolute;
     grid-template-columns: 49% 49%;
     gap: 2%;
     padding: 10px;
@@ -41,9 +42,16 @@ const MainStyle = styled.div`
     }
 `
 
+const Label = styled.label`
+    font-size: 20px;
+    margin-left: 205px;
+    color: black;
+`
+
 export {
     MainStyle,
-    BoardStyle
+    BoardStyle,
+    Label
 }
 
 

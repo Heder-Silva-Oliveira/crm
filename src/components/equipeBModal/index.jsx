@@ -1,5 +1,5 @@
 import React from 'react'
-import { BackgroundStyle, ButtonClose, ModalStyle } from '../equipebCards/styles'
+import { BackgroundStyle, ButtonClose, ModalStyle } from './styles'
 
 
 const Modal = ({ isOpen, setModalOpen}) => {

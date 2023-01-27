@@ -1,8 +1,9 @@
 import {React} from 'react'
 import Card from '../../components/equipebCards';
 import Navbar from "../../components/navbarUser"
+import Sidebar from '../../components/equiepeBSideBar';
 
-import { MainStyle, BoardStyle} from "./styles";
+import { MainStyle, BoardStyle, Label} from "./styles";
 
 const Equipeb = () => {
   const cards = [
@@ -122,7 +123,8 @@ text: "Este é o sexto card",
   return (
     <MainStyle>
       <Navbar />
-      <h1>Vamos</h1>
+      <div>
+        <Label>Cards</Label>
       <BoardStyle>
         {cards.map(item => (
             <Card  
@@ -131,6 +133,8 @@ text: "Este é o sexto card",
               text={item.text} />
         ))};
       </BoardStyle>
+      </div>
+      <Sidebar />
     </MainStyle>
   )
 }
