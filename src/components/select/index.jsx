@@ -33,7 +33,6 @@ function Select() {
   const showTags = (props) => {
     const newArray = options.filter((options) => options.id === props);
     setSelect([...select, newArray]);
-    console.log(select);
   };
   //fin função
 

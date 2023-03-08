@@ -36,7 +36,7 @@ export const DivSelect = styled.div`
   ${(props) => props.open};
   width: 98%;
   height: fit-content;
-  background-color: #d3d3d3;
+  background-color: #bfbfbf;
   padding-bottom: 5px;
   padding-left: 2px;
   padding-right: 2px;
